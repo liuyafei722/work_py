@@ -13,8 +13,7 @@ and they lived at the bottom of a well.</p>
 
 <p class="story">...</p>
 """
-soup = BeautifulSoup(html_doc, 'html.parser' )
-
+soup = BeautifulSoup(html_doc, 'html.parser')
 
 links = soup.find_all('a')
 for link in links:
@@ -23,3 +22,4 @@ print("正则表达式")
 link_node = soup.find("a", href=re.compile(r"ill"))
 print(link_node.name, link_node['href'], link_node.get_text())
 
+	

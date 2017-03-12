@@ -1,3 +1,4 @@
-import re
-
-print(re.match(r'\d{3}\-\d{3,8}$', '010-1234444445'))
+import nltk 
+from nltk.book import *
+f = FreqDist(text1)
+print(list(f)) 

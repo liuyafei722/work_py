@@ -2,7 +2,6 @@
 from bs4 import BeautifulSoup
 import re
 import urllib.parse
-
 class HtmlParser(object):
     def parse(self, page_url, html_cont):
         if page_url is None or html_cont is None:
